@@ -12,6 +12,27 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "FKGroteskNeueRegular"; /* Nom que vous choisissez pour la police */
+  src: url("/src/fonts/FKGroteskNeueTrial-Regular.otf") format("opentype"); /* Chemin vers votre fichier */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FKGroteskNeueBlackItalic"; /* Nom que vous choisissez pour la police */
+  src: url("/src/fonts/FKGroteskNeueTrial-BlackItalic.otf") format("opentype"); /* Chemin vers votre fichier */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FKGroteskNeueLightItalic"; /* Nom que vous choisissez pour la police */
+  src: url("/src/fonts/FKGroteskNeueTrial-LightItalic.otf") format("opentype"); /* Chemin vers votre fichier */
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,6 +41,11 @@
 
 a {
   color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 img,
@@ -31,4 +57,119 @@ body {
   background-color: black;
   color: white;
   font-family: "FKDisplayRegularAlt", sans-serif;
+  margin-left: 288px;
+}
+
+h1 {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 241px;
+  position: fixed;
+  top: 47px;
+  left: 64px;
+}
+
+.menu-categories {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  justify-content: end;
+  font-family: "FKDisplayRegularAlt", sans-serif;
+  font-size: 36px;
+}
+
+.menu-categories img {
+  margin-top: 10px;
+}
+
+.header img {
+  margin-top: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header {
+  position: relative;
+  width: 95%;
+  margin-top: 130px;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* ajuster espacement */
+  z-index: 5;
+  width: 100%;
+  pointer-events: none; /* laisse le flux à l'image ; éléments internes cliquables ci‑dessous */
+  mix-blend-mode: difference;
+}
+
+.header-overlay > * {
+  pointer-events: auto;
+  text-align: center;
+}
+
+.header-overlay h3 {
+  font-size: 125px;
+  font-weight: 400;
+}
+
+.header-overlay .focus {
+  font-size: 36px;
+  font-style: italic;
+  font-family: "FKGroteskNeueBlackItalic", sans-serif;
+  font-weight: 100;
+}
+
+.header-overlay .more {
+  font-size: 24px;
+  font-style: italic;
+  font-family: "FKGroteskNeueLightItalic", sans-serif;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: white;
+  color: black;
+}
+
+.discover-more {
+  display: flex;
+  gap: 15px;
+  margin-top: 45px;
+  width: 100%;
+}
+
+.discover-more a {
+  font-size: 16px;
+}
+
+.discover-more img {
+  width: 22px;
+  margin-top: -20px;
+}
+
+.nav-carousel {
+  display: flex;
+  font-size: 52px;
+  gap: 41px;
+  margin-right: 53.62px;
+  margin-top: 26.4px;
+}
+
+.under-image {
+  display: flex;
+  justify-content: space-between;
 }
