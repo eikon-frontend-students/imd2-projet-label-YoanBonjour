@@ -27,6 +27,13 @@
 }
 
 @font-face {
+  font-family: "FKGroteskNeueBlack"; /* Nom que vous choisissez pour la police */
+  src: url("/src/fonts/FKGroteskNeueTrial-Black.otf") format("opentype"); /* Chemin vers votre fichier */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "FKGroteskNeueLightItalic"; /* Nom que vous choisissez pour la police */
   src: url("/src/fonts/FKGroteskNeueTrial-LightItalic.otf") format("opentype"); /* Chemin vers votre fichier */
   font-weight: normal;
@@ -96,7 +103,7 @@ h1 {
 .header {
   position: relative;
   width: 95%;
-  margin-top: 105px;
+  margin-top: 70px;
 }
 
 .header-overlay {
@@ -172,4 +179,115 @@ h1 {
 .under-image {
   display: flex;
   justify-content: space-between;
+}
+
+.news {
+  margin-top: 190px;
+}
+
+h2 {
+  color: var(--White-100, #fff);
+  font-family: "FKDisplayRegularAlt", sans-serif;
+  font-size: var(--size-125, 125px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 14px;
+}
+
+.line-decoration {
+  margin-bottom: 125px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 200px;
+  margin-right: 54px;
+}
+
+.news-thin {
+  grid-column: span 3;
+  width: 100%;
+}
+
+.news-large {
+  grid-column: span 4;
+  width: 100%;
+}
+
+.news-thin img {
+  grid-column: span 3;
+  width: 100%;
+}
+
+.news-large img {
+  grid-column: span 4;
+  width: 100%;
+}
+
+h5 {
+  font-family: "FKGroteskNeueBlack", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.news-text {
+  font-family: "FKDisplayRehularAlt", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 15px;
+}
+
+.video {
+  width: 1152px;
+  height: auto;
+}
+
+.discover-live {
+  font-family: "FKDisplayRegularAlt", sans-serif;
+  font-size: 64px;
+}
+
+.live-promotion {
+  overflow: hidden;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  margin-right: 54px;
+  margin-bottom: 22px;
+}
+
+.product-thin {
+  grid-column: span 2;
+  width: 100%;
+}
+
+.product-large {
+  grid-column: span 4;
+  grid-row: span 2;
+  width: 100%;
+}
+
+.products-link {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 350px;
+}
+
+.products-link img {
+  width: 30px;
+}
+
+.newsletter {
+  display: flex;
+}
+
+.newsletter img {
+  color: black;
 }
