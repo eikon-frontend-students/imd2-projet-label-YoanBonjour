@@ -64,6 +64,9 @@ body {
   background-color: black;
   color: white;
   font-family: "FKDisplayRegularAlt", sans-serif;
+}
+
+main {
   margin-left: 288px;
 }
 
@@ -286,8 +289,22 @@ h5 {
 
 .newsletter {
   display: flex;
+  align-items: center;
+  gap: 40px;
+  height: 129px;
+  padding-left: 61px;
 }
 
-.newsletter img {
-  color: black;
+.newsletter svg {
+  fill: black;
+  width: 65px;
+}
+
+.newsletter p {
+  font-family: "FKDisplayRegularAlt", sans-serif;
+  font-size: 48px;
+}
+
+footer {
+  width: 100vw;
 }
