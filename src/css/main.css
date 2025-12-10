@@ -414,3 +414,74 @@ h4 {
 .big-text-description {
   width: 56%;
 }
+
+.albums-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 125px;
+  margin-right: 63px;
+  margin-bottom: 200px;
+}
+
+.albums-grid img {
+  grid-column: span 2;
+  width: 100%;
+}
+
+.albums-grid .big-cover {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row: span 2;
+  width: 100%;
+  height: 100%;
+}
+
+.events {
+  margin-top: 125px;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-live,
+.second-live {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  color: black;
+  padding: 10px 34px;
+  color: var(--Black-100, #000);
+  font-family: "FKDisplayRegularAlt", sans-serif;
+  font-size: var(--size-27, 27px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  margin-right: 10%;
+}
+
+.dates a {
+  border-left: #000 1px solid;
+  padding: 10px 34px;
+}
+
+.dates {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fff;
+  color: black;
+  align-items: center;
+  border: #000 0.5px solid;
+  margin-right: 64px;
+  color: var(--Black-100, #000);
+  font-family: "FKDisplayRegularAlt", sans-serif;
+  font-size: var(--size-27, 27px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.lives {
+  margin-bottom: 350px;
+}
