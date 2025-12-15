@@ -148,6 +148,7 @@ h1 {
   width: 100%;
   pointer-events: none; /* laisse le flux à l'image ; éléments internes cliquables ci‑dessous */
   mix-blend-mode: difference;
+  text-align: center;
 }
 
 .header-overlay > * {
@@ -156,19 +157,20 @@ h1 {
 }
 
 .header-overlay h3 {
-  font-size: 125px;
+  font-size: 10vw;
   font-weight: 400;
+  padding: 0 20px;
 }
 
 .header-overlay .focus {
-  font-size: 36px;
+  font-size: 3vw;
   font-style: italic;
   font-family: "FKGroteskNeueBlackItalic", sans-serif;
   font-weight: 100;
 }
 
 .header-overlay .more {
-  font-size: 24px;
+  font-size: 2vw;
   font-style: italic;
   font-family: "FKGroteskNeueLightItalic", sans-serif;
   font-weight: 300;
@@ -216,11 +218,12 @@ h1 {
 h2 {
   color: var(--White-100, #fff);
   font-family: "FKDisplayRegularAlt", sans-serif;
-  font-size: var(--size-125, 125px);
+  font-size: 10vw;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   margin-bottom: 14px;
+  padding: 0 20px;
 }
 
 .line-decoration {
@@ -509,4 +512,48 @@ h4 {
 
 .lives {
   margin-bottom: 350px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: block;
+  }
+
+  main {
+    margin-left: 0px;
+  }
+
+  .header {
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-overlay h3 {
+    font-size: 15vw;
+  }
+
+  .header-overlay .focus {
+    font-size: 5vw;
+  }
+
+  .header-overlay .more {
+    font-size: 3vw;
+  }
+
+  .footer-description {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .albums,
+  .lives,
+  .artist-description {
+    margin-left: 30px;
+  }
+
+  .albums-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
