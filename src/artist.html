@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <title>eikon parcel starter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/css/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <h1>4AD</h1>
     <div class="menu">
       <img src="/src/img/logo.svg" alt="logo 4ad" />
-      <include src="./components/nav.html" class="nav"></include>
+      <include src="components/nav.html" class="nav"></include>
     </div>
     <main>
       <div class="header">
@@ -43,7 +43,11 @@
       </div>
       <div class="albums">
         <h2 class="title">Albums</h2>
-        <img src="/src/img/line.svg" alt="line-decoration" />
+        <img
+          src="/src/img/line.svg"
+          alt="line-decoration"
+          class="line-decoration"
+        />
         <div class="albums-grid">
           <img
             src="/src/img/albums/albums-rome.jpg"
@@ -95,7 +99,11 @@
       </div>
       <div class="lives">
         <h2>Lives</h2>
-        <img src="/src/img/line.svg" alt="line-decoration" />
+        <img
+          src="/src/img/line.svg"
+          alt="line-decoration"
+          class="line-decoration"
+        />
         <div class="events">
           <div class="dates">
             <div class="first-live">
@@ -116,7 +124,7 @@
         </div>
       </div>
     </main>
-    <include src="./components/footer.html"></include>
+    <include src="components/footer.html"></include>
     <script src="/src/js/main.js" type="module"></script>
   </body>
 </html>
