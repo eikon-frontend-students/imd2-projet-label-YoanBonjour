@@ -590,12 +590,25 @@ h4 {
   .footer-description {
     gap: 0px;
   }
+
+  .menu nav {
+    display: none;
+    will-change: auto;
+    position: relative;
+    z-index: 20;
+  }
+
+  .news {
+    margin-top: 100px;
+  }
 }
 
 .links-tickets:hover {
   background-color: black;
   color: white;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
   border: 1px solid white;
 }
 
